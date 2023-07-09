@@ -1,0 +1,18 @@
+.codeWrapper {
+  width: 100%;
+  border-radius: .25rem;
+  border: 1px solid rgb(204, 204, 204);
+  overflow: hidden;
+
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+
+  margin: 1rem 0;
+}
+
+.codeWrapper__inline {
+  display: inline-block !important;
+  width: auto;
+  margin: 0;
+  transform: translateY(.5rem);
+}

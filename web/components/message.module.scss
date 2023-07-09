@@ -1,0 +1,18 @@
+.message {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  border-color: rgb(209, 207, 255);
+  background-color: aliceblue;
+}
+
+.message__error {
+  border-color: rgb(255, 0, 0);
+  background-color: rgb(255, 240, 240);
+}
+
+.message__warning {
+  border-color: rgb(255, 255, 0);
+  background-color: rgb(255, 255, 240);
+}

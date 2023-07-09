@@ -1,0 +1,65 @@
+{
+  "name": "react-glsl-canvas",
+  "version": "1.0.0-alpha.0",
+  "author": "Feodor Rusanov <f.rusanov@gmail.com>",
+  "description": "React component for rendering GLSL shaders. Based on `glsl-canvas-js`",
+  "keywords": [
+    "react",
+    "glsl",
+    "shader",
+    "canvas",
+    "webgl",
+    "glsl-canvas-js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frusanov/react-glsl-canvas/"
+  },
+  "license": "MIT",
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.9.3",
+    "@parcel/transformer-glsl": "2.9.3",
+    "@parcel/transformer-sass": "2.9.3",
+    "@parcel/transformer-typescript-types": "2.9.3",
+    "gitmoji-changelog": "^2.3.0",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10",
+    "release-it": "^16.1.0",
+    "typescript": ">=3.0.0"
+  },
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "dev": "parcel watch",
+    "build": "parcel build",
+    "package:dev": "parcel watch --target package",
+    "package:build": "parcel build --target package",
+    "web:dev": "parcel --target web",
+    "web:build": "parcel build --target web"
+  },
+  "dependencies": {
+    "glsl-canvas-js": "^0.2.9",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-highlight": "^0.15.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "targets": {
+    "package": {
+      "context": "browser",
+      "source": "src/index.ts",
+      "distDir": "./dist"
+    },
+    "web": {
+      "context": "browser",
+      "source": "web/index.html",
+      "distDir": "./dist/web"
+    }
+  }
+}

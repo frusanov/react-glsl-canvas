@@ -1,0 +1,53 @@
+.shaderBox {
+  position: relative;
+
+  width: calc(100% - 2rem);
+  max-width: 640px;
+  height: 360px;
+  border-radius: 4rem;
+  overflow: hidden;
+  display: flex;
+  transition: all 0.25s ease-in-out;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    border-radius: 2rem;
+    padding-top: 50%;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-height: 180px;
+  }
+}
+
+.shaderBox__text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 1000;
+  font-style: italic;
+
+  text-shadow: 0 0 4rem rgb(0, 0, 0), 0 0 2rem rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 640px) {
+    font-size: 2rem;
+  }
+}

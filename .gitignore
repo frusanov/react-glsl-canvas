@@ -1,0 +1,66 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# TurboRepo
+**/.turbo
+
+# Parcel
+.cache
+.parcel-cache
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# do not use npm lock file
+package-lock.json
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+**/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+/.next/
+/apps/site/.next/
+apps/marke/tsconfig.tsbuildinfo
+*.sublime-workspace
+/gitflow
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+.timetracker
+*.tsbuildinfo
+
+# System Files
+.DS_Store
+Thumbs.db
+secrets.env
