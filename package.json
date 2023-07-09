@@ -1,6 +1,6 @@
 {
   "name": "react-glsl-canvas",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "author": "Feodor Rusanov <f.rusanov@gmail.com>",
   "description": "React component for rendering GLSL shaders. Based on `glsl-canvas-js`",
   "keywords": [
