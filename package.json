@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/frusanov/react-glsl-canvas/"
   },
+  "homepage": "https://frusanov.github.io/react-glsl-canvas/",
   "license": "MIT",
   "packageManager": "yarn@3.6.1",
   "source": "src/index.ts",
