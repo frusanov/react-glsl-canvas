@@ -24,10 +24,11 @@
   "scripts": {
     "dev": "parcel watch",
     "build": "parcel build",
-    "package:dev": "parcel watch --target package",
-    "package:build": "parcel build --target package",
-    "web:dev": "parcel --target web",
-    "web:build": "parcel build --target web"
+    "package:dev": "parcel watch ./src/index.ts",
+    "package:build": "parcel build ./src/index.ts",
+    "web:dev": "parcel --target web-local",
+    "web:build": "parcel build --target web",
+    "release": "yarn package:build && yarn release-it"
   },
   "dependencies": {
     "glsl-canvas-js": "^0.2.9"
@@ -40,22 +41,29 @@
     "gitmoji-changelog": "^2.3.0",
     "parcel": "^2.9.3",
     "process": "^0.11.10",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-highlight": "^0.15.0",
     "release-it": "^16.1.0",
-    "typescript": ">=3.0.0",
+    "typescript": ">=3.0.0"
+  },
+  "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-highlight": "^0.15.0"
   },
   "targets": {
-    "package": {
+    "web-local": {
       "context": "browser",
-      "source": "src/index.ts",
-      "distDir": "./dist"
+      "source": "web/index.html",
+      "distDir": "./dist/web",
+      "publicUrl": "/"
     },
     "web": {
       "context": "browser",
       "source": "web/index.html",
-      "distDir": "./dist/web"
+      "distDir": "./dist/web",
+      "publicUrl": "/react-glsl-canvas/"
     }
   }
 }

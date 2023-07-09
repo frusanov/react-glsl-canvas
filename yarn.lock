@@ -7502,6 +7502,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
+    react-highlight: ^0.15.0
   languageName: unknown
   linkType: soft
 
