@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="1.0.0-alpha.2"></a>
+## 1.0.0-alpha.2 (2023-07-09)
+
+### Removed
+
+- ➖ Move some deps to devDeps [[b38b8b8](https://github.com/frusanov/react-glsl-canvas/commit/b38b8b8ebb29a0dc249b8e7c981e94f16273a60c)]
+
+
 <a name="1.0.0-alpha.1"></a>
 ## 1.0.0-alpha.1 (2023-07-09)
 
