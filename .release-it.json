@@ -16,6 +16,9 @@
     "push": true,
     "pushArgs": ["--follow-tags"]
   },
+  "npm": {
+    "tag": "latest"
+  },
   "hooks": {
     "after:bump": "yarn gitmoji-changelog && git add CHANGELOG.md"
   }
