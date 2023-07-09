@@ -1,5 +1,6 @@
 .vscode
 .idea
+.github
 .parcel-cache
 .yarn
 dist/web
