@@ -20,14 +20,14 @@ export const App = () => {
           React GLSL is a library that allows you to rander GLSL shaders inside React components.
         </p>
         <p>
-          This library is based on{' '}
+          Props of GLSL component are passed to the underlying{' '}
           <a href="https://github.com/actarian/glsl-canvas" target="_black">glsl-canvas-js</a>{' '}
-          that also need to be installed:
+          instance as options.
         </p>
         <Code language={'bash'}>
-          npm install react-glsl-canvas glsl-canvas-js{'\n'}
+          npm install react-glsl-canvas{'\n'}
           # or{'\n'}
-          yarn add react-glsl-canvas glsl-canvas-js
+          yarn add react-glsl-canvas
         </Code>
         <Code language={'typescript'}>
           {`import React from 'react';
@@ -52,11 +52,6 @@ void main() {
   gl_FragColor = vec4(st.x,st.y,0.0,1.0);
 }`}
         </Code>
-        <p>
-          Props of GLSL component are passed to the underlying{' '}
-          <a href="https://github.com/actarian/glsl-canvas" target="_black">glsl-canvas-js</a>{' '}
-          instance as options.
-        </p>
       </TextBlock>
     </DefaultLayout>
   );

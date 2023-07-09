@@ -1,0 +1,9 @@
+.vscode
+.idea
+.parcel-cache
+.yarn
+dist/web
+src
+web
+.release-it.json
+.yarnrc.yml

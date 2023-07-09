@@ -2,12 +2,12 @@
 
 React GLSL is a library that allows you to rander GLSL shaders inside React components.
 
-This library is based on glsl-canvas-js that also need to be installed:
+Props of GLSL component are passed to the underlying [glsl-canvas-js](https://github.com/actarian/glsl-canvas) instance as options.
 
 ```bash
-npm install react-glsl-canvas glsl-canvas-js
+npm install react-glsl-canvas
 # or
-yarn add react-glsl-canvas glsl-canvas-js
+yarn add react-glsl-canvas
 ```
 
 ```typescript
@@ -34,6 +34,3 @@ void main() {
   gl_FragColor = vec4(st.x,st.y,0.0,1.0);
 }
 ```
-
-
-Props of GLSL component are passed to the underlying glsl-canvas-js instance as options.
