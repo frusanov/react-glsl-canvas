@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="1.0.0-alpha.6"></a>
+## 1.0.0-alpha.6 (2023-08-06)
+
+### Fixed
+
+- 🐛 fix some type errors [[9ee0844](https://github.com/frusanov/react-glsl-canvas/commit/9ee0844c7683cd9f874e124e6ab425f66f6c404e)]
+
+
 <a name="1.0.0-alpha.5"></a>
 ## 1.0.0-alpha.5 (2023-07-09)
 
