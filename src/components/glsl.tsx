@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import type { JSX } from 'react';
-import { Canvas, ICanvasOptions } from 'glsl-canvas-js/dist/esm/glsl';
+import { Canvas, ICanvasOptions } from 'glsl-canvas-js';
 
 interface GLSLOptions extends ICanvasOptions {
   fallback?: (error: Error) => JSX.Element;
